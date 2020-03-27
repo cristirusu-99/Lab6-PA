@@ -32,9 +32,13 @@ public class DrawingPanel extends JPanel {
         });
     }
     private void drawShape(int x, int y) {
-        int radius = new Random().nextInt(); //generate a random number
+        int radius = new Random().nextInt(50); //generate a random number
         int sides = (int)frame.configPanel.sidesField.getValue(); //get the value from UI (in ConfigPanel)
-        Color color = new Color(new Random().nextInt(255), new Random().nextInt(255), new Random().nextInt(255), new Random().nextInt(255)); //create a transparent random Color.
+        String colorType = (String)frame.configPanel.colorCombo.getSelectedItem();
+        Color color;
+        if (colorType.compareTo("Random")==0)
+            color = new Color(new Random().nextInt(255), new Random().nextInt(255), new Random().nextInt(255), new Random().nextInt(128) + 127); //create a transparent random Color.
+        else    color = Color.BLACK;
         graphics.setColor(color);
         graphics.fill(new RegularPolygon(x, y, radius, sides));
     }
