@@ -21,14 +21,14 @@ public class MainFrame extends JFrame {
         canvas = new DrawingPanel(this);
         configPanel = new ConfigPanel(this);
         controlPanel = new ControlPanel(this);
- //...TODO
+ //...DONE
 
         //arrange the components in the container (frame)
         //JFrame uses a BorderLayout by default
         add(canvas, CENTER); //this is BorderLayout.CENTER
         add(configPanel, NORTH);
         add(controlPanel, SOUTH);
- //...TODO
+ //...DONE
 
         //invoke the layout manager
         pack();

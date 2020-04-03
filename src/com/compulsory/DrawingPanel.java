@@ -49,4 +49,7 @@ public class DrawingPanel extends JPanel {
     protected void paintComponent(Graphics g) {
         g.drawImage(image, 0, 0, this);
     }
+
+    protected int getW() { return W; }
+    protected int getH() { return H; }
 }

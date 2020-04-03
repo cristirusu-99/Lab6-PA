@@ -20,7 +20,7 @@ public class ConfigPanel extends JPanel {
         //create the colorCombo, containing the values: Random and Black
         colorCombo = new JComboBox(new String[]{"Random", "Black"});
         colorCombo.setSelectedIndex(1);
- //...TODO
+ //...DONE
         add(sidesLabel); //JPanel uses FlowLayout by default
         add(sidesField);
         add(colorCombo);
