@@ -57,6 +57,7 @@ public class ControlPanel extends JPanel {
         Color currentColor = frame.canvas.graphics.getColor();
         frame.canvas.graphics.setColor(Color.WHITE);
         frame.canvas.graphics.fill(new RegularPolygon(frame.canvas.getW()/2, frame.canvas.getH()/2, frame.canvas.getW()+frame.canvas.getH(), 4));
+        frame.canvas.graphics.setColor(currentColor);
     }
 
     private void exit(ActionEvent e ){

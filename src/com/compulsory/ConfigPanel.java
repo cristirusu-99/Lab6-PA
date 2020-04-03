@@ -15,7 +15,7 @@ public class ConfigPanel extends JPanel {
     private void init() {
         //create the label and the spinner
         JLabel sidesLabel = new JLabel("Number of sides:");
-        sidesField = new JSpinner(new SpinnerNumberModel(0, 0, 100, 1));
+        sidesField = new JSpinner(new SpinnerNumberModel(3, 3, 100, 1));
         sidesField.setValue(6); //default number of sides
         //create the colorCombo, containing the values: Random and Black
         colorCombo = new JComboBox(new String[]{"Random", "Black"});
